@@ -61,3 +61,25 @@ elif opcao == "Gerador de Recibo Rápido":
                                data=pdf_bytes, 
                                file_name="recibo.pdf", 
                                mime="application/pdf")
+            
+            
+            st.divider() # Cria uma linha divisória
+
+# Texto Legal no fundo do site
+st.markdown("""
+<style>
+    .footer {
+        font-size: 12px;
+        color: gray;
+        text-align: justify;
+    }
+</style>
+<div class="footer">
+    <strong>Aviso Legal e Termos de Uso:</strong><br>
+    Este site é uma ferramenta de apoio informativo e não substitui o aconselhamento profissional de um contabilista certificado ou da Autoridade Tributária. 
+    Os cálculos apresentados são estimativas baseadas nos coeficientes padrão do regime simplificado em Portugal (2026). 
+    O utilizador é inteiramente responsável pela verificação e submissão dos seus dados fiscais. 
+    Não armazenamos dados pessoais ou financeiros introduzidos nestes formulários. 
+    Ao utilizar este site, concorda que os criadores não são responsáveis por quaisquer erros, omissões ou decisões tomadas com base nestas informações.
+</div>
+""", unsafe_allow_html=True)
